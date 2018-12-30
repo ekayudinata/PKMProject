@@ -21,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PhotoActivity" />
-        <activity android:name=".DrawLineActivity"></activity>
+        <activity android:name=".DrawLineActivity" />
+        <activity android:name=".DragLine" />
+        <activity android:name=".PhotoDrawActivity"></activity>
     </application>
 
 </manifest>

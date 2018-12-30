@@ -28,13 +28,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Button photoButton = (Button) this.findViewById(R.id.takePhoto);
         photoButton.setOnClickListener(this);
+
+        Button btnCanvas = (Button) this.findViewById(R.id.btn_canvas);
+        btnCanvas.setOnClickListener(this);
+
+        Button btnDrag = (Button) this.findViewById(R.id.btn_drag);
+        btnDrag.setOnClickListener(this);
+
+        Button btnDrawLine = (Button) this.findViewById(R.id.btn_draw_image);
+        btnDrawLine.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
+
+
         if (v.getId() == R.id.takePhoto){
             Intent intent = new Intent(this,PhotoActivity.class);
+            startActivity(intent);
+        }
+        if (v.getId() == R.id.btn_canvas){
+//            Toast.makeText(this,"wikwik",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this,DrawLineActivity.class);
+            startActivity(intent);
+        }
+        if (v.getId() == R.id.btn_drag){
+            Intent intent = new Intent(this,DragLine.class);
+            startActivity(intent);
+        }
+
+        if (v.getId() == R.id.btn_draw_image){
+            Intent intent = new Intent(this,PhotoDrawActivity.class);
             startActivity(intent);
         }
     }

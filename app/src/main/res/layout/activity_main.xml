@@ -15,5 +15,24 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/takePhoto"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canvas"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_canvas"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drag Line"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_drag"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Line On Image"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_draw_image"/>
 </LinearLayout>
